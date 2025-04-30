@@ -122,3 +122,25 @@ window.addEventListener('DOMContentLoaded', () => {
       }, 2000);
     }
   });
+
+// 스크롤 이벤트 핸들러
+function handleDetailImageScroll() {
+    const detailImages = document.querySelectorAll('.detail-image img');
+    
+    detailImages.forEach(img => {
+        // 이미지의 위치 계산
+        const rect = img.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        
+        // 이미지가 화면의 80% 위치에 도달했을 때
+        if (rect.top < windowHeight * 0.8) {
+            img.classList.add('active');
+        }
+    });
+}
+
+// 스크롤 이벤트 리스너 등록
+window.addEventListener('scroll', handleDetailImageScroll);
+
+// 페이지 로드 시에도 체크
+window.addEventListener('load', handleDetailImageScroll);
