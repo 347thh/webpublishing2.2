@@ -1,0 +1,533 @@
+html, body {
+    font-family: '42dot Sans', sans-serif; font-weight: 400; 
+    line-height: 1.6; 
+    background-color: #f9f9f9;
+    word-break: keep-all; white-space: nomal;
+    margin: 0; padding: 0;
+
+    cursor: none;
+}
+
+body {
+    transition: background 0.4s; color: #000000;
+}
+
+nav {
+    width: 100%; height: 100px;
+
+    position: fixed; display: flex; justify-content: center;  align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600; font-size: 0.8rem;
+
+}
+
+/* 헤드라인 */
+h1 {
+    margin: 0; 
+    line-height: 1.4; font-size: 4rem; font-weight: 500;
+    padding-top: 100px;
+    color: #000000;
+}
+
+/* 서브헤드라인 */
+h2 {
+    margin: 0;
+    line-height: 1.4; font-size: 2rem; font-weight: 600;
+    padding-top: 70px;
+    color: #000000;
+}
+
+/* 섹션 */
+h3 {
+    margin: 0;
+    line-height: 1.2; font-size: 1.2rem; font-weight: 600;
+    text-decoration: underline; text-underline-offset: 5px; text-decoration-thickness: 2px;
+
+}
+
+ /* 내용 */
+p {
+    margin: 0;
+    line-height: 1.7; font-size: 1rem; font-weight: 400;
+    padding-top: 50px;
+    color: #000000;
+}
+
+
+
+/* class */ 
+
+.wrap {
+    position: relative;
+    width: 1100px; margin: auto; 
+}
+
+/* 커서 */
+
+.cursor {
+    position: fixed; top: 0; left: 0;
+    width: 70px; height: 70px;
+    background-color: rgba(255, 255, 255, 0.5); backdrop-filter: blur(1px);
+    pointer-events: none;
+    border-radius: 50%; border: 1px solid orangered;
+    z-index: 1000;
+}
+
+.cursor-hover {
+    background-color: orangered;
+    transition: background 0.4s;
+}
+
+/* 인트로 */
+
+#intro-overlay {
+    position: fixed;
+  z-index: 9999;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 1s cubic-bezier(.4,0,.2,1), visibility 1s;
+  opacity: 1;
+  visibility: visible;
+}
+
+#intro-overlay.hide {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.intro-content img {
+    width: 50%;
+}
+
+
+/* nav 바 */
+
+.nav-wrap {
+    width: 100%; max-width: 1100px;
+    margin: auto; 
+
+    display: flex; justify-content: space-between;  align-items: center;
+    
+}
+
+.nav-left {
+    display: flex; 
+    align-items: center; justify-content: flex-start;
+
+    gap: 20px;
+}
+
+.nav-right { 
+    display: flex; 
+    align-items: center; justify-content: flex-end;
+
+    gap: 20px;
+}   
+
+.nav-center {
+    display: flex; 
+    align-items: center; justify-content: center;
+
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+}   
+
+.nav-center img {
+    height: 40px; width: auto;
+}   
+
+nav.nav-invert {
+    background: #222 !important;
+    transition: background 0.4s;
+  }
+  nav.nav-invert a {
+    color: #fff !important;
+    transition: color 0.4s;
+  }
+
+/* 헤더 */
+
+.header-wrap {
+    padding-top: 100px; margin-left: auto; margin-right: auto;
+    max-width: 1100px;
+}
+
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 130px;
+
+}
+
+.header-slogan {
+    display: flex; align-items: flex-start;
+    margin: 0;
+    font-size: 1.2rem; line-height: 1.4; font-weight: 600;
+}
+
+.header-button {
+    display: flex;
+    padding: 10px;
+    align-items: flex-end;
+    font-size: 1.2rem; line-height: 1.4; text-decoration: underline; font-weight: 600;
+}
+
+.header-box {
+    display: flex; justify-content: center; align-items: center;
+    margin-top: 90px; margin-bottom: 1350px;
+}
+
+.header-box img {
+    min-width: 110%;
+}
+
+
+
+/* ABOUT */
+
+.about-section { margin: 0 auto;
+
+}
+
+.about-wrap {
+    padding-top: 220px; padding-bottom: 200px; margin-left: auto; margin-right: auto;
+    width: 1100px;
+    
+    text-align:left; 
+}
+
+.about-wrap h1,h2,h3,p {
+    color: #000000;
+}
+
+.card h2 {justify-content: flex-start;}
+
+.card p {justify-content: flex-end;}
+
+.about-wrap-2 {
+    position: sticky; margin: 0 auto;
+    top: 0; height: 700px; width: 1100px;
+    text-align: center; justify-content: center;
+    display: flex;
+    padding-top: 150px;
+    background-image: url(card-bg.gif); background-repeat: no-repeat; background-size: 0%; background-position: center;
+
+    transition: background-size 0.4s;
+}
+
+.about-wrap-2 h3 {
+    row-gap: 40px;
+}
+
+.card-box {
+   width: 1100px; height: 2000px; margin: 0 auto; padding-bottom: 1000px;
+   overflow-y: auto;
+   display: flex; flex-direction: column;
+}
+
+.card-box::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    height: 750px;
+    z-index: 1; gap: 500px;
+}
+
+.card-title {align-items: flex-start; width: 400px; line-height: 1.4; font-size: 2rem; font-weight: 600;}
+.card-title h3 {padding-bottom: 10px; text-decoration: none;}
+
+.card-text {align-items: flex-end; width: 300px; line-height: 1.6; font-size: 1rem; font-weight: 400; text-align: center;}
+
+.about-wrap-3 {
+    padding-top: 200px; padding-bottom: 200px; margin-left: auto; margin-right: auto;
+    min-height: 90vh;
+    align-items: center; justify-content: center;
+    text-align: center;
+}
+
+.sub-text {
+    font-size: 0.8rem; line-height: 1.4; font-weight: 400; color: gray;
+    text-decoration: none;
+    padding-bottom: 300px;
+}
+
+.video-wrap {
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    max-height:px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    transition: height 0.5s cubic-bezier(.4,0,.2,1);
+    transform-origin: center center;
+}
+
+.center-video { 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+.video-text {
+    text-align: center;
+    font-size: 3rem; line-height: 1.5; font-weight: 600;
+    z-index: 1000;
+
+    opacity: 0;
+    transform: translateY(40px); /* 아래에서 시작 */
+    transition: opacity 0.7s cubic-bezier(.4,0,.2,1), transform 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+.video-text.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about-button {
+    text-align: center;
+    font-size: 1rem; line-height: 1.4; text-decoration: none; font-weight: 600;
+    padding: 10px; border-radius: 1000px; border: 1px solid orangered; background-color: orangered; color: #ffffff;
+}
+
+/* 키트 구성 */
+
+.kit-wrap {
+    padding-top: 200px; padding-bottom: 0px; 
+    margin-left: auto; margin-right: auto;
+    width: 1100px;
+}
+
+.kit-wrap h1,h2,h3,p {
+    text-align: center;
+    color: #000000;
+}
+
+.kit-wrap h1 {
+    font-size: 2rem; line-height: 1.4; font-weight: 600;
+}
+
+.kit-scroll-box {
+    width: 100vw;         
+    max-width: 100vw;     
+    overflow-x: hidden;   
+    padding: 100px 0;
+    margin-left: auto; margin-right: auto;
+    background-color: rgb(255, 255, 255);
+    box-sizing: content-box; /* 패딩 포함 */
+}
+
+.kit-scroll {
+    display: flex;
+    width: fit-content;  
+    min-width: 100vw;       
+    animation: scroll 30s linear infinite;
+    gap: 1px;
+    overflow-x: hidden;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.kit-scroll-item {
+    min-width: 400px;
+    height: 400px;
+
+    display: flex;
+    align-items: center; justify-content: center;
+
+    border-radius: 1px; border: 0.1px solid rgb(173, 173, 173);
+    background-color: rgb(251, 251, 251);
+    overflow-x: hidden;
+
+    transition: all 0.3s cubic-bezier(.4,0,.2,1);
+    transform-origin: center center; 
+}
+
+.kit-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    font-size: 1rem; line-height: 1.4; font-weight: 600; color: rgb(0, 0, 0); text-align: left;
+}
+
+.kit-scroll-item img {
+    width: 100%;
+    height: auto%;
+    object-fit: contain;
+
+    transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+    transform-origin: center center;
+}
+
+.kit-scroll-item:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); 
+    border-color: transparent; 
+    cursor: pointer;
+
+.kit-scroll-item:hover img {
+    transform: scale(1.2);
+    }
+
+
+/* 디테일 */
+
+.detail-container {
+    width: 100%;
+    padding: 150px 0;
+    background: #fff;
+}
+
+.detail-inner {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+}
+
+.detail-image {
+    flex: 0 0 auto;
+    width: 500px;
+}
+
+.detail-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+}
+
+.detail-content {
+    flex: 1;
+    padding-top: 20px;
+}
+
+.detail-content h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.detail-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
+}
+
+/* 모달 스타일 */
+.kit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.kit-modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.kit-modal.show .modal-content {
+    transform: translateY(0);
+}
+
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #333;
+}
+
+.modal-inner {
+    display: flex;
+    gap: 40px;
+}
+
+.modal-image {
+    flex: 0 0 50%;
+}
+
+.modal-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.modal-text {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.modal-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.modal-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 클릭 가능한 아이템 스타일 수정 */
+.kit-content {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.kit-content:hover {
+    transform: scale(1.05);
+}
+
