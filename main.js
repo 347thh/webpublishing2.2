@@ -144,3 +144,4 @@ window.addEventListener('scroll', handleDetailImageScroll);
 
 // 페이지 로드 시에도 체크
 window.addEventListener('load', handleDetailImageScroll);
+

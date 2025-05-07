@@ -18,9 +18,9 @@
     <nav>
         <div class="nav-wrap">
             <div class="nav-left">
-                <a href="#">ABOUT</a>
-                <a href="#">CONTENTS</a>
-                <a href="#">CAUTION</a>
+                <a href="#about">ABOUT</a>
+                <a href="#contents">CONTENTS</a>
+                <a href="#caution">CAUTION</a>
             </div>
             <div class="nav-center">
                 <img src="nav-logo.png" alt="nav-logo">
@@ -31,24 +31,27 @@
             </div>
         </div>
     </nav>
+    <a href="#" class="scroll-top-btn" aria-label="맨 위로">↑</a>
     <header>
-        <div class="header-wrap">
+        <div id="header" class="header-wrap">
             <div class="header-text">
                 <div class="header-slogan">발표가 두려운가요? <br> 당신의 성공적인 발표를 위해 혁신적 솔루션을 제안합니다.</div>
                 <div id="scroll-about" class="header-button">보러가기 ↓</div>
             </div>
             <div class="header-box">
-                <img src="header-logo.png" alt="header-logo">
+                <img class="header-logo" src="header-logo.png" alt="header-logo">
             </div>
         </div>
     </header>
     <section class="about-section">
-        <div class="about-wrap">
+        <div id="about" class="about-wrap">
             <h3 style="color: #000000; text-align: left;">
                 (ABOUT)
             </h3>
-            <h1>
-                두려움에서 자신감✓으로,<br>PRESENTATION MASTER KIT✫가<br>그 첫걸음을 함께⍆합니다.
+            <h1 class="about-animated">
+                <span>두려움에서 자신감✓으로,</span>
+                <span>PRESENTATION MASTER KIT✫가</span>
+                <span>그 첫걸음을 함께⍆합니다.</span>
             </h1>
          </div>
          <div class="about-wrap-2">
@@ -116,12 +119,12 @@
         </div>
         <div class="video-text" style="padding: 400px;">
             이제, <br> 떨지말고 말하세요!<br><br>
-            <a class="about-button" href="#">키트 보러가기</a>
+            <a class="about-button" href="#kit">키트 보러가기</a>
          </div>
     </div>
     <section style="background-color: rgb(255, 255, 255);">
-        <div class="kit-wrap">
-            <h3 style="padding-bottom: 0px;">
+        <div id="kit" class="kit-wrap">
+            <h3 id="contents" style="padding-bottom: 0px;">
                 (CONTENTS)
             </h3>
             <h1 style="padding-bottom: 20px;">키트 구성을 소개합니다</h1>
@@ -137,13 +140,13 @@
                 <div class="kit-content">
                     최적의 발표자 포즈 추천
                     <div class="kit-scroll-item">
-                        <img src="kit2.png" alt="kit1">
+                        <img src="kit2.2.png" alt="kit1">
                     </div>
                 </div>  
                 <div class="kit-content">
                     청중 투명 안경
                     <div class="kit-scroll-item">
-                        <img src="kit3.png" alt="kit1">
+                        <img src="kit3.1.png" alt="kit1">
                     </div>
                 </div>
                 <div class="kit-content">
@@ -168,13 +171,13 @@
                 <div class="kit-content">
                     최적의 발표자 포즈 추천
                     <div class="kit-scroll-item">
-                        <img src="kit2.png" alt="kit1">
+                        <img src="kit2.2.png" alt="kit1">
                     </div>
                 </div>  
                 <div class="kit-content">
                     청중 투명 안경
                     <div class="kit-scroll-item">
-                        <img src="kit3.png" alt="kit1">
+                        <img src="kit3.1.png" alt="kit1">
                     </div>
                 </div>
                 <div class="kit-content">
@@ -197,130 +200,164 @@
             <div class="detail-content">
                 <div class="detail-text-box">
                     <p>kit 1</p>
-                    <h1>박수 유도 스피커</h1>
+                    <h2>박수 유도 스피커</h2>
                     <p>박수 유도 스피커는 손목시계 형태로 제작된 스피커로, 발표 후 박수소리를 재생하여 발표자의 자신감을 극대화 시키며, 자연스럽게 청중의 박수 갈채를 유도합니다.</p>
                     <a class="detail-button" href="#">구매하기 →</a>
                 </div>
             </div>
             <div class="detail-image">
-                <img src="kit1.1.png" alt="detail1" style="right: -100px; top: -30px;">
+                <img src="kit1.1.png" alt="detail1" style="transform: rotate(90deg); left: 700px; top: -200px; width: 1200px">
             </div>
         </div>
     </section>
-    <section style="background-color: #ffffff; padding-bottom: 50px;">
+    <section style="background-color: #ffffff;">
         <div class="detail-wrap-2">
-            <div class="detail-text-box-2">
-                <h2>실제 청중의<br>반응과 같은 착각</h2>
-                <p>박수 유도 스피커는 소형 디바이스의 한계를 극복하기 위해, 독자 개발한 <strong>ClapBoost™ 사운드 엔진</strong>을 탑재하고 있습니다.
-                    이 엔진은박수 소리의 주파수 대역을 정밀하게 분석해, 가장 감정적으로풍부하게 들리는 영역을 중심으로 음향을 최적화합니다.</p>
-             </div>
-         </div>
+            <div class="detail-2-content">
+                <div class="detail-text-box-2 detail-2-right" style="padding-top: 50px;">
+                    <h2>실제 청중의<br>반응과 같은 착각</h2>
+                    <p>박수 유도 스피커는 소형 디바이스의 한계를 극복하기 위해, 독자 개발한 <strong>ClapBoost™ 사운드 엔진</strong>을 탑재하고 있습니다.
+                        이 엔진은 박수 소리의 주파수 대역을 정밀하게 분석해, 가장 감정적으로 풍부하게 들리는 영역을 중심으로 음향을 최적화합니다.</p>
+                </div>
+            </div>
          <div class="detail-image-2">
-            <img src="kit1.2.png" alt="detail2" style="transform: rotate(90deg); left: 100px; top: -100px; width: 700px">
+            <img src="kit1.2.png" alt="detail2" style="transform: rotate(90deg); left: -400px; top: -100px; width: 1400px">
+         </div>
          </div>
     </section>
-
+    <section>
+        <div class="detail-wrap-3">
+            <img src="kit1.3.png" alt="detail3" style="width:100%; left:0; top:-300px;">
+            </div>
+    </section>
+<div style="height: 200px;"></div>
     <section style="background-color: #f7f7f7">
         <div class="detail-wrap">
             <div class="detail-content">
                 <div class="detail-text-box">
                     <p>kit 2</p>
-                    <h1>최적의 발표자 포즈 추천</h1>
-                    <p>소형 무선 이어폰에 탑재된 AI 모델이 실시간으로 몸짓을 분석해 발표자에게 신뢰감을 높이고 청중의 몰입도를 극대화 시킬 적절한 포즈를 조언해줍니다.</p>
+                    <h2>최적의 발표자 포즈 추천</h2>
+                    <p>소형 무선 이어폰에 탑재된 AI 모델이 실시간으로 몸짓을 분석해 발표자에게 신뢰감을 높이고<br> 청중의 몰입도를 극대화 시킬 적절한 포즈를 조언해줍니다.</p>
                     <a class="detail-button" href="#">구매하기 →</a>
                 </div>
             </div>
             <div class="detail-image">
-                <img src="kit2.1.png" alt="detail1" style="right: -100px; top: -30px;">
+                <img src="kit2.2.png" alt="detail1" style="transform: rotate(0deg); left: 900px; top: 200px; width: 500px">
             </div>
         </div>
     </section>
-    <section style="background-color: #ffffff; padding-bottom: 50px;">
+    <section style="background-color: #ffffff;">
         <div class="detail-wrap-2">
-            <div class="detail-text-box-2">
-                <h2>AI로 실시간<br>신체 움직임 분석</h2>
-                <p>최적의 발표자 포즈 안내 기기에는 PoseGuide™ AI 모델이 탑재되어 있습니다. 이 모델은 수천 시간에 달하는 발표 영상 데이터와 심리학 기반의 제스처 분석 자료를 학습하여, 발표자의 실시간 움직임을 정밀하게 추적하고 분석할 수 있습니다.</p>
-             </div>
-         </div>
+            <div class="detail-2-content">
+                <div class="detail-text-box-2 detail-2-right" style="padding-top: 50px;">
+                    <h2>AI로 실시간<br>신체 움직임 분석</h2>
+                    <p>최적의 발표자 포즈 안내 기기에는 PoseGuide™ AI 모델이 탑재되어 있습니다. 
+                        이 모델은 수천 시간에 달하는 발표 영상 데이터와 심리학 기반의 제스처 분석 자료를 학습하여, 
+                        발표자의 실시간 움직임을 정밀하게 추적하고 분석할 수 있습니다.</p>
+                </div>
+            </div>
          <div class="detail-image-2">
-            <img src="kit2.png" alt="detail2" style="left: 100px; top: 00px; width: 800px">
+            <img src="kit2.1.png" alt="detail2" style="transform: rotate(220deg); left: 100px; top: 100px; width: 800px">
+         </div>
          </div>
     </section>
-
+    <section>
+        <div class="detail-wrap-3">
+            <img src="kit2.3.png" alt="detail3" style="width:100%; left:0; top:-300px;">
+            </div>
+    </section>
+    <div style="height: 200px;"></div>
     <section style="background-color: #f7f7f7">
         <div class="detail-wrap">
             <div class="detail-content">
                 <div class="detail-text-box">
                     <p>kit 3</p>
-                    <h1>청중 투명 안경</h1>
-                    <p>쓰는 순간 청중이 투명하게 보이게 되며, <br>발표자의 심리적 부담을 줄여 자연스럽고 자신감 있는 발표가 가능해집니다.</p>
+                    <h2>청중 투명 안경</h2>
+                    <p>쓰는 순간 청중이 투명하게 보이게 되며, 발표자의 심리적 부담을 줄여<br>자연스럽고 자신감 있는 발표가 가능해집니다.</p>
                     <a class="detail-button" href="#">구매하기 →</a>
                 </div>
             </div>
             <div class="detail-image">
-                <img src="kit3.png" alt="detail1" style="right: 00px; top: 50px; width: 900px;">
+                <img src="kit3.1.png" alt="detail1" style="transform: rotate(0deg); left: 800px; top: 100px; width: 800px">
             </div>
         </div>
     </section>
-    <section style="background-color: #ffffff; padding-bottom: 50px;">
+    <section style="background-color: #ffffff;">
         <div class="detail-wrap-2">
-            <div class="detail-text-box-2">
-                <h2>AI로 실시간<br>신체 움직임 분석</h2>
-                <p>최적의 발표자 포즈 안내 기기에는 PoseGuide™ AI 모델이 탑재되어 있습니다. 이 모델은 수천 시간에 달하는 발표 영상 데이터와 심리학 기반의 제스처 분석 자료를 학습하여, 발표자의 실시간 움직임을 정밀하게 추적하고 분석할 수 있습니다.</p>
-             </div>
-         </div>
+            <div class="detail-2-content">
+                <div class="detail-text-box-2 detail-2-right" style="padding-top: 50px;">
+                    <h2>SeeThrough™ AR 필터링</h2>
+                    <p>청중 투명 안경에는 자체 개발한 SeeThrough™ AR 필터링기술이 적용되어 있습니다. 이 
+                        기술은 실제 사람을 카메라로 인식한 뒤, 배경 데이터를 기반으로 실시간 리타겟팅을 수행하여 청중의 모습을 반투명하게 처리합니다.</p>
+                </div>
+            </div>
          <div class="detail-image-2">
-            <img src="kit3.2.png" alt="detail2" style="transform: rotate(90deg); left: 100px; top: -2000px; width: 1200px">
+            <img src="kit3.2.png" alt="detail2" style="transform: scaleX(-1); left: -200px; top: 0px; width: 1100px">
+         </div>
          </div>
     </section>
-
+    <section>
+        <div class="detail-wrap-3">
+            <img src="kit3.3.png" alt="detail3" style="width:100%; left:0; top:-400px;">
+            </div>
+    </section>
+    <div style="height: 200px;"></div>
     <section style="background-color: #f7f7f7">
         <div class="detail-wrap">
             <div class="detail-content">
                 <div class="detail-text-box">
                     <p>kit 4</p>
-                    <h1>AI 발표 시뮬레이터</h1>
-                    <p>자체 개발한 발표 전용 ai 시뮬레이터가<br>여러 상황에서의 발표 연습을 도와주고 취약점을 분석해주는 서비스 입니다.</p>
+                    <h2>AI 발표 시뮬레이터</h2>
+                    <p>자체 개발한 발표 전용 ai 시뮬레이터가 여러 상황에서의 발표 연습을 도와주고 취약점을 분석해주는 서비스 입니다.</p>
                     <a class="detail-button" href="#">구매하기 →</a>
                 </div>
             </div>
             <div class="detail-image">
-                <img src="kit4.png" alt="detail1" style="right: 100px; top: 100px; width: 800px;">
+                <img src="kit4.png" alt="detail1" style="left: 850px; top: 70px; width: 800px">
             </div>
         </div>
     </section>
-    <section style="background-color: #ffffff; padding-bottom: 50px;">
+    <section style="background-color: #ffffff;">
         <div class="detail-wrap-2">
-            <div class="detail-text-box-2">
-                <h2>청중 반응 조절 기능</h2>
-                <p>AI 발표 시뮬레이터는 단순히 대사를 연습하는 수준을 넘어, 실제 상황과 유사한 청중반응 시뮬레이션을 제공합니다. </p>
-                <p>용자는 발표 상황에 따라 청중의 반응을 ‘호응 좋음’, ‘침묵’, ‘냉담’ 등으로 조절할 수 있으며, 각 반응은 발표자의 멘탈 내성 훈련과 대처 능력 향상에 중점을 두고 설계되어 있습니다.</p>
-             </div>
-         </div>
+            <div class="detail-2-content">
+                <div class="detail-text-box-2 detail-2-right" style="padding-top: 50px;">
+                    <h2>청중 반응 조절 기능 탑재</h2>
+                    <p>AI 발표 시뮬레이터는 단순히 대사를 연습하는 수준을 넘어, 실제 상황과 유사한 청중반응 시뮬레이션을 제공합니다.
+                        사용자는 발표 상황에 따라 청중의 반응을 '호응 좋음', '침묵', '냉담' 등으로 조절할 수 있으며, 각 반응은 발표자의 멘탈 내성 훈련과 대처 능력 향상에 중점을 두고 설계되어 있습니다.
+                    </p>
+                </div>
+            </div>
          <div class="detail-image-2">
-            <img src="kit4.2.png" alt="detail2" style="transform: rotate(90deg); left: 100px; top: -100px; width: 700px">
+            <img src="kit4.2.png" alt="detail2" style="left: 200px; top: -50px; width: 500px">
+         </div>
          </div>
     </section>
-
+    <section>
+        <div class="detail-wrap-3">
+            <img src="kit4.3.png" alt="detail3" style="width:100%; left:0; top:-300px;">
+            </div>
+    </section>
+    <div style="height: 200px;"></div>
     <section style="background-color: #f7f7f7">
         <div class="detail-wrap">
             <div class="detail-content">
                 <div class="detail-text-box">
                     <p>추가 옵션</p>
-                    <h1>비상! 시선 분산 버튼</h1>
+                    <h2>비상! 시선 분산 버튼</h2>
                     <p>비상 시에 누르면 창문 밖에서 시선 분산을 위한 폭죽이 터져<br> 일시적으로 시선에서 자유로워지는 버튼입니다. <br>&nbsp;<br>말 하는 중 삑사리 났을 때, 갑자기 속이 울렁거릴 때, 질문 받았을 때, 언제든 사용하세요!</p>
                     <a class="detail-button" href="#">구매하기 →</a>
                 </div>
             </div>
             <div class="detail-image">
-                <img src="kit5.png" alt="detail1" style="right: -250px; top: -30px;">
+                <img src="kit5.png" alt="detail1" style="transform: rotate(0deg); left: 700px; top: 0px; width: 1000px">
             </div>
         </div>
     </section>
+
+   
     <section>
         <div style="height: 500px"></div>
 
-        <div class="wrap" style="width: 800px;">
+        <div id="caution" class="wrap" style="width: 800px;">
             <h1 style="text-align: center; padding-bottom: 20px; font-size: 1.5rem;">이용 시 주의사항</h1>
             <p style="text-align: center; line-height: 1.6; font-size:0.8rem; padding-top: 20px">본 제품은 만 13세 이상 사용자를 대상으로 개발되었습니다.
             중학생 이상의 발표 환경(수행평가, 과제 발표 등)에 최적화되어 있으며, 초등학생 이하 사용자에게는 일부 기능이 과도하게 느껴질 수 있습니다.
